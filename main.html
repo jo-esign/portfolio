@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Comptible" content="ie=edge">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>Personal Portfolio</title>
+</head>
+<body>
+     <section id="home.html">
+    <nav id="navbar">
+        <ul style="list-style-type: none;">
+        <li><a class="nav-link" href="main.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="work.html">Work</a></li>
+  </ul></nav>
+  
+  <header><h1>Personal Portfolio</h1></header>
+
+  <div class="buttons">
+    <p>A link to my codepen profile below</p>
+    <a href="https://codepen.io/eghogho" class="btn btn-info" role="button">Click Me!</a>
+    </div>
+     
+   
+    <style>
+      .btn{ margin: 50px;
+        padding-left: auto;
+        padding-right: auto; 
+        color: white;
+             }
+             p{color:white;}
+             h2{color:white;}
+
+        header{color:white;
+        padding-top: 70px;}
+        #navbar{display: flex;
+  flex-wrap: wrap;
+  align-content: right;
+}
+
+  li{float: left;}
+  li a{margin: 10px;
+    padding: 16px;
+    font-size: 20px;
+    color: white;}
+  ul{position: fixed;
+  padding: 0px;
+  flex-direction: column;
+  padding-left: 60%;
+  }
+
+body{
+    background-image: url(https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg);
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
+
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2d1fa8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2d1fa8;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color:;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  align-items: center;
+  float: left;
+  width: 70%;
+  padding-bottom: 20px;
+  padding-left: 350px;
+  color:white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+form{margin-right: auto;
+margin-left: auto;}
+    </style>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Leave a message</p>
+  </div>
+  
+    <div class="column">
+      <form action="mailto:joy.matthew09@gmail.com">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select name="country" required>
+          <option value="" disabled selected hidden>Choose a country</option>
+          <option value="Australia">Australia</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>
